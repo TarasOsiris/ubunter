@@ -1,0 +1,145 @@
+syntax on
+filetype plugin on
+
+set list
+set smartindent
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
+set nowrap
+set cursorline
+set noerrorbells
+set showmode
+set encoding=UTF-8
+set nu
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set hls
+set showcmd
+set relativenumber
+set ignorecase
+
+let mapleader = " "
+
+" easier beginning and end of line
+nnoremap L $
+nnoremap H ^
+
+" Copy till the end of line
+nnoremap Y y$
+
+" Exit insert mode
+inoremap jk <esc>
+
+" ===============
+" INTELLIJ STUFF
+" ===============
+
+" G-o to ...
+nmap gb :action Back<CR>
+nmap gf :action Forward<CR>
+nmap gi :action GotoImplementation<CR>
+nmap gr :action FindUsages<CR>
+nmap gs :action GotoSuperMethod<CR>
+
+" Find
+nmap <leader>ff :action GotoFile<CR>
+nmap <leader>fc :action GotoClass<CR>
+
+" A-ction
+nmap <leader>cr :action RenameElement<CR>
+nmap <leader>cf :action ReformatCode<CR>
+nmap <leader>ai :action Inline<CR>
+nmap <leader>ax :action HideActiveWindow<CR>
+nmap <leader>as :action SelectInProjectView<CR>
+nmap <leader>ag :action Generate<CR>
+nmap <leader>ab :action CompileDirty<CR>
+nmap <leader>ap :action SelectInProjectView<CR>
+nmap <leader>ax :action Run<CR>
+
+" E-xtract
+map <leader>ea :action IntroduceActionsGroup<CR>
+map <leader>ep :action IntroduceParameter<CR>
+map <leader>ev :action IntroduceVariable<CR>
+map <leader>ec :action IntroduceConstant<CR>
+map <leader>ef :action ExtractFunction<CR>
+map <leader>em :action ExtractMethod<CR>
+
+" W-indow
+:map <leader>wf <Action>(HideAllWindows)
+:map <leader>wq <Action>(HideActiveWindow)
+:map <leader>wp <Action>(ActivateProjectToolWindow)
+:map <leader>wg <Action>(ActivateVersionControlToolWindow)
+:map <leader>wl <Action>(ActivateLogcatToolWindow)
+:map <leader>wt <Action>(ActivateTerminalToolWindow)
+
+:map <leader>b :action ShowBookmarks<CR>
+
+" GG-it
+:map <leader>ggh <Action>(Vcs.ShowTabbedFileHistory)
+:map <leader>ggd <Action>(Git.CompareWithBranch)
+:map <leader>ggl <Action>(Vcs.UpdateProject)
+:map <leader>ggc <Action>(ActivateCommitToolWindow)
+:map <leader>ggm <Action>(Git.ResolveConflicts)
+
+set ideajoin
+set ideamarks
+set idearefactormode=select
+
+set clipboard+=unnamed
+set clipboard+=unnamedplus
+
+" system clipboard
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>y "+yy
+nmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>p "+p
+vmap <leader>P "+P
+
+" Quick copy-paste
+" Copy
+vmap <C-Space> "ay
+nmap <C-c> "ayiw
+" Paste
+nmap <C-Space> "aP
+imap <C-Space> <C-o>"ap
+
+" =========================> EASYMOTION
+set easymotion
+map <Leader> <Plug>(easymotion-prefix)
+
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
+
+" =========================> WINDOW MAGIC
+map <tab> <c-w>
+" Remap working with windows through TAB
+map <tab><tab> <c-w><c-w>
+
+" Close only current tab, not the whole split
+map <c-w>c <Action>(CloseContent)
+
+" Vertical/Horizontal split -> do vertical/horizontal split and close the dulplicate
+map <c-w>v <c-w>v<c-w>c
+map <c-w>s <c-w>s<c-w>c
+
+" Other mappings (Primeagen)
+" Move things up and down in visual mode
+vmap J :m '>+1<CR>gv=gv
+vmap K :m '<-2<CR>gv=gv
+
+" Keep cursor in the middle when scrolling
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+
+" Search terms stay in the middle
+nmap n nzzzv
+nmap N Nzzzv
+
+nnoremap <Esc><Esc> <Esc>:nohlsearch<CR>
