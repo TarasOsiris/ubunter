@@ -12,6 +12,6 @@ else
   export EDITOR='nvim'
 fi
 
-# plugins=(git zsh-syntax-highlighting zsh-autosuggestions you-should-use fzf-zsh-plugin)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions you-should-use fzf-zsh-plugin)
 
 source $ZSH/oh-my-zsh.sh
