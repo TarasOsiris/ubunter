@@ -1,5 +1,5 @@
 # Exit immediately if a command exits with a non-zero status
-set -e
+set -ecd 
 
 # Needed for all installers
 sudo apt update -y

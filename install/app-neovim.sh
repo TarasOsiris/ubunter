@@ -5,8 +5,13 @@ sudo install nvim-linux64/bin/nvim /usr/local/bin/nvim
 rm -rf nvim-linux64 nvim.tar.gz
 cd -
 
-if [ ! -d "$HOME/.config/nvim" ]; then
-	git clone https://github.com/TarasOsiris/starter ~/.config/nvim
-fi
+mv ~/.config/nvim{,.bak}
+
+# optional but recommended
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+
+ln -s ~/.local/share/ubunter/config/nvim ~/.config/nvim
 
 # See https://github.com/basecamp/omakub/blob/master/install/app-neovim.sh
