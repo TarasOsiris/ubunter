@@ -6,8 +6,8 @@ sudo apt update -y
 sudo apt install -y curl git unzip
 
 # Ensure computer doesn't go to sleep or lock while installing
-gsettings set org.gnome.desktop.screensaver lock-enabled false
-gsettings set org.gnome.desktop.session idle-delay 0
+# gsettings set org.gnome.desktop.screensaver lock-enabled false
+# gsettings set org.gnome.desktop.session idle-delay 0
 
 # Run installers
 for script in ~/.local/share/ubunter/install/*.sh; do source $script; done
@@ -16,8 +16,8 @@ for script in ~/.local/share/ubunter/install/*.sh; do source $script; done
 sudo apt upgrade -y
 
 # Revert to normal idle and lock settings
-gsettings set org.gnome.desktop.screensaver lock-enabled true
-gsettings set org.gnome.desktop.session idle-delay 300
+# gsettings set org.gnome.desktop.screensaver lock-enabled true
+# gsettings set org.gnome.desktop.session idle-delay 300
 
 # Logout to pickup changes
-gum confirm "Ready to logout for all settings to take effect?" && gnome-session-quit --logout --no-prompt
+# gum confirm "Ready to logout for all settings to take effect?" && gnome-session-quit --logout --no-prompt
