@@ -1,2 +1,3 @@
-sudo apt install -y alacritty
-mkdir -p ~/.config/alacritty
+sudo apt install -y cargo
+cargo install alacritty
+
