@@ -1,5 +1,5 @@
-sudo apt install -y cargo cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-cargo install alacritty
+sudo apt install -y alacritty
 
-mkdir -p ~/.config/alacritty
+rm ~/.config/alacritty/alacritty.toml
 ln -s ~/.local/share/ubunter/config/alacritty.toml ~/.config/alacritty/alacritty.toml
+

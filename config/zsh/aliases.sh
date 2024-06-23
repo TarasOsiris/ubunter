@@ -1,3 +1,5 @@
+alias cdu='nvim ~/.local/share/ubunter'
+
 # Tools
 alias e='nvim' # edit
 alias f='fg'
@@ -49,3 +51,4 @@ alias tfdocs='cd ~/Documents/repo/tf/developertransfollow && e .'
 # Projects
 alias ue='cd ~/Documents/repo/ue/plugins && nvim .'
 alias ninevadocs='cd ~/Documents/repo/nineva/nineva-docs && nvim .'
+
