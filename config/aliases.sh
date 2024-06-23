@@ -20,11 +20,10 @@ alias b='bat'
 alias ezsh="nvim ~/.zshrc"
 alias czsh='cat ~/.zshrc'
 alias szsh='source ~/.zshrc'
-alias ev='nvim ~/.config/nvim/init.vim'
 
 # CDs
-alias df='cd ~/dotfiles'
-alias edf='cd ~/dotfiles && nvim .'
+alias df="cd $UBUNTER_PATH"
+alias edf="cd $UBUNTER_PATH && nvim ."
 
 alias d="cd ~/Documents"
 alias dt="cd ~/Desktop"
@@ -36,16 +35,9 @@ alias cdrp='cd ~/Documents/repo'
 # Dropbox
 alias db='cd ~/Dropbox'
 alias ob='cd ~/Dropbox/obsidian/taras && e main.md'
-alias u='brew upgrade'
-
-alias tile='itermocil --here taras'
 
 # TF
 alias tfapp='cd ~/Documents/repo/tf/tfapp-android && e .'
 alias tfportal='cd ~/Documents/repo/tf/portal && e .'
 alias tfapi='cd ~/Documents/repo/tf/tf && e .'
 alias tfdocs='cd ~/Documents/repo/tf/developertransfollow && e .'
-
-# Projects
-alias ue='cd ~/Documents/repo/ue/plugins && nvim .'
-alias ninevadocs='cd ~/Documents/repo/nineva/nineva-docs && nvim .'
