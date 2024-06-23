@@ -17,4 +17,4 @@ fi
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions you-should-use fzf-zsh-plugin)
 
 source $ZSH/oh-my-zsh.sh
-source $UBUNTER_PATH/config/zsh/aliases.sh
+source ~/.local/share/ubunter/config/zsh/aliases.sh
