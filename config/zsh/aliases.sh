@@ -13,7 +13,7 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 alias gwipp='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip--"; git push'
 alias lg='lazygit'
 
-alias ealias='nvim ~/aliases.sh'
+alias ealias="nvim $UBUNTER_PATH/config/zsh/aliases.sh"
 
 alias b='bat'
 
@@ -41,3 +41,4 @@ alias tfapp='cd ~/Documents/repo/tf/tfapp-android && e .'
 alias tfportal='cd ~/Documents/repo/tf/portal && e .'
 alias tfapi='cd ~/Documents/repo/tf/tf && e .'
 alias tfdocs='cd ~/Documents/repo/tf/developertransfollow && e .'
+
