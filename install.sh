@@ -1,9 +1,13 @@
 # Exit immediately if a command exits with a non-zero status
-set -e
+# set -e
 
 # Needed for all installers
 sudo apt update -y
 sudo apt install -y curl git unzip
+
+# git
+git config --global user.email "leskiv.taras@gmail.com"
+git config --global user.name "Taras Leskiv"
 
 # Ensure computer doesn't go to sleep or lock while installing
 # gsettings set org.gnome.desktop.screensaver lock-enabled false
