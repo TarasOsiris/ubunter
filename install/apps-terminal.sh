@@ -14,3 +14,11 @@ sudo apt install -y eza
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+# fixup bat alias
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
+# fixup fd alias
+ln -s $(which fdfind) ~/.local/bin/fd
+

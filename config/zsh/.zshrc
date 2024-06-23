@@ -18,3 +18,5 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions you-should-use fzf-zsh-
 
 source $ZSH/oh-my-zsh.sh
 source ~/.local/share/ubunter/config/zsh/aliases.sh
+
+eval "$(~/.local/bin/mise activate zsh)"
