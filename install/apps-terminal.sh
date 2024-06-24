@@ -1,4 +1,4 @@
-sudo apt install -y ripgrep bat zoxide plocate btop apache2-utils fd-find
+sudo apt install -y ripgrep bat zoxide plocate btop apache2-utils fd-find neofetch
 
 sudo apt update
 sudo apt install -y gpg
@@ -21,4 +21,3 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 
 # fixup fd alias
 ln -s $(which fdfind) ~/.local/bin/fd
-
