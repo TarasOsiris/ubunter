@@ -12,3 +12,7 @@ git clone https://github.com/TarasOsiris/ubunter.git ~/.local/share/ubunter > /d
 
 source ~/.local/share/ubunter/install.sh
 ```
+
+# Other
+
+- Remapping keys: https://askubuntu.com/a/296437
