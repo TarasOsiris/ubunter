@@ -8,6 +8,7 @@ sudo apt install -y curl git unzip
 # git
 git config --global user.email "leskiv.taras@gmail.com"
 git config --global user.name "Taras Leskiv"
+git config --global pull.rebase false
 
 # Ensure computer doesn't go to sleep or lock while installing
 # gsettings set org.gnome.desktop.screensaver lock-enabled false

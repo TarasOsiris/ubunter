@@ -16,3 +16,7 @@ source ~/.local/share/ubunter/install.sh
 # Other
 
 - Remapping keys: https://askubuntu.com/a/296437
+
+# TODO
+
+- add and copy wallpaper image
