@@ -11,11 +11,6 @@
 
 set $mod Mod4
 
-exec_always --no-startup-id gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "[{'Gdk/WindowScalingFactor', <2>}, {'Xft/DPI', <196608>}, {'Xcursor/Size', <25000>}, {'Xcursor/size', <25000>}]"
-exec_always --no-startup-id gsettings set org.gnome.desktop.interface cursor-size 25
-exec_always --no-startup-id xrdb -merge /home/taras/.Xresources
-exec_always --no-startup-id xrandr --dpi 192
-
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -152,6 +147,14 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# custom
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wp.jpg
+
+hide_edge_borders smart_no_gaps
+gaps inner 0px
+gaps outer 0px
+smart_gaps on
+
 # THEME
 set $rosewater #f2d5cf
 set $flamingo #eebebe
@@ -181,7 +184,7 @@ set $mantle #292c3c
 set $crust #232634
 
 # target                 title     bg    text   indicator  border
-client.focused           $lavender $base $text  $rosewater $lavender
+client.focused           $lavender $peach $base  $rosewater $peach
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
