@@ -8,11 +8,8 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-#
-#
-#
-exec_always --no-startup-id caffeine-indicator
-exec_always --no-startup-id flameshot
+
+exec --no-startup-id caffeine-indicator
 
 exec_always --no-startup-id gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "[{'Gdk/WindowScalingFactor', <2>}, {'Xft/DPI', <196608>}, {'Xcursor/Size', <25000>}, {'Xcursor/size', <25000>}]"
 exec_always --no-startup-id gsettings set org.gnome.desktop.interface cursor-size 50
@@ -50,6 +47,8 @@ bindsym $mod+Shift+q kill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id rofi -show drun
+
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
 # change focus
 bindsym $mod+j focus left
