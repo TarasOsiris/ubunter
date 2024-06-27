@@ -1,4 +1,4 @@
-sudo apt install -y ripgrep bat zoxide plocate btop apache2-utils fd-find neofetch caffeine
+sudo apt install -y ripgrep bat zoxide plocate btop apache2-utils fd-find neofetch caffeine rofi
 
 sudo apt update
 sudo apt install -y gpg
