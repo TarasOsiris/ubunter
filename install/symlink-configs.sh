@@ -25,3 +25,8 @@ mkdir -p ~/.config/zellij/
 mkdir -p ~/.config/i3
 rm -f ~/.config/i3/config
 ln -s ~/.local/share/ubunter/config/i3/config ~/.config/i3/config
+
+# lazygit
+mkdir -p ~/.config/lazygit
+rm -f ~/.config/lazygit/config.yml
+ln -s ~/.local/share/ubunter/config/lazygit/config.yml ~/.config/lazygit/config.yml

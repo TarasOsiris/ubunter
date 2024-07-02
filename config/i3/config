@@ -51,6 +51,9 @@ bindsym $mod+d exec --no-startup-id "rofi -show combi -modes combi -combi-modes 
 
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
+# keybinding to lock screen
+bindsym $mod+shift+x exec "i3lock -c 000000"
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
