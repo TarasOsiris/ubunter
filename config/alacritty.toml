@@ -9,6 +9,9 @@ padding.x = 0
 padding.y = 0
 opacity = 0.5
 
+[cursor]
+style = { shape = "Beam" }
+
 # FONT
 
 [font]

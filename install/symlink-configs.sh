@@ -16,6 +16,10 @@ mkdir -p ~/.config/alacritty
 rm -f ~/.config/alacritty/alacritty.toml
 ln -s ~/.local/share/ubunter/config/alacritty.toml ~/.config/alacritty/alacritty.toml
 
+# picom
+rm -f ~/.config/picom.conf
+ln -s ~/.local/share/ubunter/config/picom.conf ~/.config/picom.conf
+
 # zellij
 mkdir -p ~/.config/zellij/
 [ ! -f "$HOME/.config/zellij/config.kdl" ] && ln -s ~/.local/share/ubunter/config/zellij.kdl ~/.config/zellij/config.kdl
